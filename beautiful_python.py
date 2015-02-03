@@ -22,6 +22,8 @@ import this
 
 from itertools import izip
 from collections import defaultdict
+from functools import partial
+
 
 
 def unzip(tuples):
