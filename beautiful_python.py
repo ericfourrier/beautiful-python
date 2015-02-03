@@ -56,7 +56,7 @@ four_lists = [[] for _ in xrange(4)]
 
 # Unpacking 
 for i, color in enumerate(colors):
-    print i, '--->', 
+    print i, '--->',color
    
 # More advanced unpacking 
 
@@ -154,9 +154,9 @@ with open('data.txt') as f:
 # with automaticely close the file 
 
 # quick benchmark ipython execute one by one 
-timeit sum([i*i for i in range(100000)])
-timeit sum(i*i for i in range(100000))
-timeit sum(i*i for i in xrange(100000))
+%timeit sum([i*i for i in range(100000)])
+%timeit sum(i*i for i in range(100000))
+%timeit sum(i*i for i in xrange(100000))
 
 #########################################################
 # Some tricks to know  
